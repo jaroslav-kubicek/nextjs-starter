@@ -102,6 +102,6 @@ Fall back to Grep/Glob/Read **only** when the graph doesn't cover what you need.
 
 - `/verify` — slash command that runs `pnpm verify` and reports the first failure with file:line.
 - `next-docs` subagent — read-only Next.js 16 docs lookup against `node_modules/next/dist/docs/`. Prefer it over `Read`-ing docs directly when the topic is non-trivial; it keeps the main context clean.
-- `.claude/settings.json` configures `code-review-graph` hooks (PostToolUse on Edit/Write/Bash, SessionStart status). If `code-review-graph` is not installed on this machine, run `uvx install code-review-graph`.
+- `.claude/settings.json` configures `code-review-graph` hooks (PostToolUse on Edit/Write/Bash, SessionStart status). The hooks call the binary directly, so a fresh clone needs `code-review-graph` on PATH — install with `uv tool install code-review-graph` (or `pipx install code-review-graph`).
 
 <!-- END:agents -->
