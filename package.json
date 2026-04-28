@@ -12,7 +12,8 @@
     "format:check": "prettier --check .",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "verify": "pnpm lint && pnpm typecheck && pnpm format:check && pnpm test"
   },
   "dependencies": {
     "@base-ui/react": "^1.4.1",
