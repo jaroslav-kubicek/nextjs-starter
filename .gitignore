@@ -40,7 +40,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# claude code local
-.claude/
+# claude code — track everything except the personal layer
+.claude/settings.local.json
 # Added by code-review-graph
 .code-review-graph/
