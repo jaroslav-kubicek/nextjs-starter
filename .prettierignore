@@ -1,0 +1,10 @@
+.next
+node_modules
+coverage
+pnpm-lock.yaml
+
+# external tool configs (not part of this project)
+.claude/
+.cursor/
+.mcp.json
+.opencode.json
