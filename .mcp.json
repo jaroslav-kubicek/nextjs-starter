@@ -4,6 +4,11 @@
       "command": "uvx",
       "args": ["code-review-graph", "serve"],
       "type": "stdio"
+    },
+    "chrome-devtools": {
+      "command": "pnpm",
+      "args": ["dlx", "chrome-devtools-mcp@latest"],
+      "type": "stdio"
     }
   }
 }
